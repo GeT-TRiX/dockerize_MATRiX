@@ -14,6 +14,7 @@ You can use MATRiX locally by installing Docker on your machine.
 git clone https://github.com/GeT-TRiX/dockerize_MATRiX
 sudo docker build -t openanalytics/shinyproxy-template .
 java -jar shinyproxy-2.0.5.jar
+connect to http://localhost:8080/
 ```
 
 ## Contact
