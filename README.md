@@ -17,6 +17,8 @@ git clone https://github.com/GeT-TRiX/MA_Trix_App
 mv MA_Trix_App dockerize_MATRiX/
 ```
 You need to respect the following arborescence
+
+```
 .
 +-- application.yml
 +-- MA_Trix_App
@@ -26,6 +28,7 @@ You need to respect the following arborescence
 +-- shinyproxy-2.0.5.jar
 +-- Rprofile.site
 +-- Dockerfile
+```
 
 ```
 cd dockerize_MATRiX
