@@ -1,7 +1,7 @@
 # dockerize_MATRiX
-![alt text](https://avatars0.githubusercontent.com/u/5429470?s=200&v=4)
-![alt text](https://img.icons8.com/metro/1600/plus-math.png)
-![alt text](https://avatars2.githubusercontent.com/u/274806?s=200&v=4)
+![alt text](https://avatars0.githubusercontent.com/u/5429470?s=200&v=4 =250x)
+![alt text](https://img.icons8.com/metro/1600/plus-math.png =250x)
+![alt text](https://avatars2.githubusercontent.com/u/274806?s=200&v=4 =250x)
 
 ## Installation
 
