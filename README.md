@@ -10,11 +10,31 @@ You can use MATRiX locally by installing Docker on your machine.
 1. [Docker for Ubuntu/Debian](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 2. [Docker for Windows/Mac](https://www.docker.com/)
 
+First you need to clone the repositories
 ```
 git clone https://github.com/GeT-TRiX/dockerize_MATRiX
+git clone https://github.com/GeT-TRiX/MA_Trix_App
+mv MA_Trix_App dockerize_MATRiX/
+```
+You need to respect the following arborescence
+.
++-- application.yml
++-- MA_Trix_App
+|   +-- server.R
+|   +-- ui.R
+|   +-- ...
++-- shinyproxy-2.0.5.jar
++-- Rprofile.site
++-- Dockerfile
+
+```
+cd dockerize_MATRiX
 sudo docker build -t openanalytics/shinyproxy-template .
 java -jar shinyproxy-2.0.5.jar
 connect to http://localhost:8080/
+id:tesla
+password:password
+and click on the last link (MATRiX)
 ```
 
 ## Contact
