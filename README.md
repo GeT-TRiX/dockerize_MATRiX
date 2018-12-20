@@ -3,6 +3,24 @@
 ![alt text](img/plus-math.png)
 ![alt text](https://avatars2.githubusercontent.com/u/274806?s=200&v=4 )
 
+## Getting started
+
+Link the docker daeomon to shinyproxy.
+By default ShinyProxy will do so on port 2375 of the docker host. In order to allow for connections on port 2375, the startup options need to be edited.
+
+```
+sudo mkdir /etc/systemd/system/docker.service.d/
+touch /etc/systemd/system/docker.service.d/override.conf
+sudo nano /etc/systemd/system/docker.service.d/override.conf
+```
+add the following information in the new file
+
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -D -H tcp://127.0.0.1:2375
+```
+for more information check the [shinyproxy guide](https://www.shinyproxy.io/getting-started/)
 
 ## Installation
 

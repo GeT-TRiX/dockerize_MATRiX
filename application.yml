@@ -24,11 +24,12 @@ proxy:
     group-search-filter: (uniqueMember={0})
     manager-dn: cn=read-only-admin,dc=example,dc=com
     manager-password: password
-  spring:
-    servlet:
-      multipart:
-        max-file-size: 200MB
-        max-request-size: 200MB
+  authentication: none
+  # spring:
+  #   servlet:
+  #     multipart:
+  #       max-file-size: 200MB
+  #       max-request-size: 200MB
   support:
     mail-to-address: franck.soubes@inra.fr
   container-log-path: ./container-logs
