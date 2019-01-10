@@ -18,3 +18,9 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 > shiny::runApp('/root/matrix')
+[1] "//root/matrix/dataE01"
+                   data 
+"//root/matrix/dataE01" 
+[1] TRUE
+[1] FALSE
+character(0)

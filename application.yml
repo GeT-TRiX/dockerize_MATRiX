@@ -1,3 +1,8 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
 proxy:
   title: Open Analytics Shiny Proxy
   logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
@@ -10,12 +15,15 @@ proxy:
   container-wait-time: 200000
   # Example: 'simple' authentication configuration
   users:
-  - name: jack
+  - name: E01
+    password: hegu
+    groups: scientists
+  - name: E05
+    password: isos
+    groups: scientists
+  - name: tesla
     password: password
     groups: scientists
-  - name: jeff
-    password: password
-    groups: mathematicians
   # Example: 'ldap' authentication configuration
   ldap:
     url: ldap://ldap.forumsys.com:389/dc=example,dc=com
@@ -24,12 +32,7 @@ proxy:
     group-search-filter: (uniqueMember={0})
     manager-dn: cn=read-only-admin,dc=example,dc=com
     manager-password: password
-  authentication: none
-  # spring:
-  #   servlet:
-  #     multipart:
-  #       max-file-size: 200MB
-  #       max-request-size: 200MB
+  authentication: simple
   support:
     mail-to-address: franck.soubes@inra.fr
   container-log-path: ./container-logs
