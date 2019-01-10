@@ -5,6 +5,26 @@
 
 ## Getting started
 
+First make sure that you have java installed on your machine 
+
+```
+java -version
+```
+
+that will display the following message:
+
+```
+openjdk version "1.8.0_72"
+OpenJDK Runtime Environment (Zulu 8.13.0.5-linux64) (build 1.8.0_72-b15)
+OpenJDK 64-Bit Server VM (Zulu 8.13.0.5-linux64) (build 25.72-b15, mixed mode)
+```
+
+if its not the case follow the tutorial [here](https://thishosting.rocks/install-java-ubuntu/)
+
+You can use MATRiX locally by installing Docker on your machine.
+1. [Docker for Ubuntu/Debian](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+2. [Docker for Windows/Mac](https://www.docker.com/)
+
 Link the docker daeomon to shinyproxy.
 By default ShinyProxy will do so on port 2375 of the docker host. In order to allow for connections on port 2375, the startup options need to be edited.
 
@@ -24,9 +44,6 @@ for more information check the [shinyproxy guide](https://www.shinyproxy.io/gett
 
 ## Installation
 
-You can use MATRiX locally by installing Docker on your machine.
-1. [Docker for Ubuntu/Debian](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-2. [Docker for Windows/Mac](https://www.docker.com/)
 
 First you need to clone the repositories
 ```
