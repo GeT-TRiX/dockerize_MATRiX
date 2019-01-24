@@ -56,7 +56,7 @@ proxy:
   - id: matrix
     display-name: MATRiX appl
     description: Application which allow users to explore microarray data
-    container-cmd: ["R", "-e", "shiny::runApp('/root/matrix')"]
+    container-cmd: ["R", "-e", "shiny::runApp('/root/MA_Trix_App')"]
     container-image: openanalytics/shinyproxy-template
     access-groups: [scientists, mathematicians]
 

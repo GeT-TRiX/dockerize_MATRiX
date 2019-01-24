@@ -1,0 +1,82 @@
+Loading required package: shiny
+
+Listening on http://0.0.0.0:3838
+Warning: Error in matrix: 'data' must be of a vector type, was 'NULL'
+  129: matrix
+  128: Ops.data.frame
+  120: <reactive>
+  104: vennlist
+   96: renderText
+   95: func
+   82: origRenderFunc
+   81: output$totalgenes
+    1: shiny::runApp
+Warning: Error in matrix: 'data' must be of a vector type, was 'NULL'
+  129: matrix
+  128: Ops.data.frame
+  120: <reactive>
+  104: vennlist
+   96: renderText
+   95: func
+   82: origRenderFunc
+   81: output$totalgenes
+    1: shiny::runApp
+Warning in if (!is.na(attribValue)) { :
+  the condition has length > 1 and only the first element will be used
+Warning in charToRaw(enc2utf8(text)) :
+  argument should be a character vector of length 1
+all but the first element will be ignored
+Loading required package: grid
+
+Attaching package: ‘reshape2’
+
+The following objects are masked from ‘package:data.table’:
+
+    dcast, melt
+
+Loading required package: graph
+
+Attaching package: ‘graph’
+
+The following object is masked from ‘package:plyr’:
+
+    join
+
+Loading required package: GOstats
+Loading required package: Category
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+
+
+Attaching package: ‘GOstats’
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    makeGOGraph
+
+
+Attaching package: ‘RDAVIDWebService’
+
+The following object is masked from ‘package:survival’:
+
+    cluster
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    species
+
+The following object is masked from ‘package:IRanges’:
+
+    members
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    counts, species
+
+

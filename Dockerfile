@@ -36,12 +36,12 @@ RUN  R -e """list.of.packages <- c('rJava','shiny','shinythemes','shinyjs','ggpl
 RUN  R -e 'source(file = "http://bioconductor.org/biocLite.R");biocLite("RDAVIDWebService");'
 RUN  R -e 'source(file = "http://bioconductor.org/biocLite.R");biocLite(c("org.Hs.eg.db","org.Mm.eg.db","org.Dr.eg.db","org.Gg.eg.db","org.Gg.eg.db","org.Ce.eg.db","org.Rn.eg.db","org.Ss.eg.db"));'
 
-RUN mkdir /root/matrix
-COPY matrix/ /root/matrix
+RUN mkdir /root/MA_Trix_App
+COPY MA_Trix_App/ /root/MA_Trix_App
 
 COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838
 
 
-CMD ["R", "-e", "shiny::runApp('/root/matrix')"]
+CMD ["R", "-e", "shiny::runApp('/root/MA_Trix_App')"]

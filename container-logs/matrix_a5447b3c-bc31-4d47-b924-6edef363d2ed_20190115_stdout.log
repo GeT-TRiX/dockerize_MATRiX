@@ -1,0 +1,60 @@
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> shiny::runApp('/root/matrix')
+[1] TRUE
+[1] FALSE
+loading file number 1 
+loading file number 2 
+loading file number 3 
+[1] "TOXA_HEGU_MA0798_All_FAMT_WorkingSet.csv"
+[2] "TOXA_HEGU_MA0798_All_FAMT_pData.csv"     
+[3] "All_FAMT_ResTable.csv"                   
+[1] FALSE
+loading file number 1 
+loading file number 2 
+loading file number 3 
+[1] "TOXA_HEGU_MA0798_All_FAMT_WorkingSet.csv"
+[2] "TOXA_HEGU_MA0798_All_FAMT_pData.csv"     
+[3] "All_FAMT_ResTable.csv"                   
+[1] FALSE
+loading file number 1 
+loading file number 2 
+loading file number 3 
+[1] "workingset.csv"                      "TOXA_HEGU_MA0798_All_FAMT_pData.csv"
+[3] "All_ResTable.csv"                   
+[1] FALSE
+[1] "Table showing the ProbeNames and GeneNames associated with their respective logFC for the intersection(s) selected"
+[1] "Table showing the GeneNames associated with the average logFC for the intersection(s) selected"
+
+ -> Hierarchical clustering on genes... 
+
+ -> Plotting Dendrogram... 
+    Done 
+[1] "gray25" "gray75"
+
+ -> Plotting HeatMap... 
+    Done 
+
+ -> size of 3 sub-dendrograms
+[1] 273 115 141
+ ->export result tables for each subgroup 
+ ->Expression boxplot for each subgroup 
+[1] "DAVID Gene Set Enrichment Analysis"
+[1] "Top 10 Significantly Enriched GO and KEGG Terms"
