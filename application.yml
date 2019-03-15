@@ -15,12 +15,6 @@ proxy:
   container-wait-time: 200000
   # Example: 'simple' authentication configuration
   users:
-  - name: E01
-    password: hegu
-    groups: scientists
-  - name: E05
-    password: isos
-    groups: scientists
   - name: tesla
     password: password
     groups: scientists
