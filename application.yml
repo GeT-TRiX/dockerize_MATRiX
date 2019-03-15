@@ -6,23 +6,41 @@ spring:
 proxy:
   title: Open Analytics Shiny Proxy
   logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
-  landing-page: /
+  hide-navbar: true
   heartbeat-rate: 100000
   heartbeat-timeout: 600000
   port: 8080
-  authentication: ldap
+  authentication: simple
   admin-groups: scientists
   container-wait-time: 200000
   # Example: 'simple' authentication configuration
   users:
+  - name: gettrix
+    password: matrix
+    groups: scientists
+  - name: public
+    password: public
+    group: scientists
   - name: E01
     password: hegu
     groups: scientists
   - name: E05
     password: isos
     groups: scientists
-  - name: tesla
-    password: password
+  - name: guest
+    password: guest
+    groups: scientists
+  - name: I2MC11
+    password: bepa
+    groups: scientists
+  - name: UNH
+    password: UNH
+    groups: scientists
+  - name: admindev
+    password: trixdev
+    groups: scientists
+  - name: TRIX
+    password: YALI
     groups: scientists
   # Example: 'ldap' authentication configuration
   ldap:
@@ -57,7 +75,15 @@ proxy:
     display-name: MATRiX appl
     description: Application which allow users to explore microarray data
     container-cmd: ["R", "-e", "shiny::runApp('/root/MA_Trix_App')"]
+    container-volumes:  [ "/home/fsoubes/project:/root/MA_Trix_App/data" , "/home/fsoubes/chat:/root/MA_Trix_App/chat" ]
     container-image: openanalytics/shinyproxy-template
+    access-groups: [scientists, mathematicians]
+  - id: matrixdev
+    display-name: MATRiX appl
+    description: Application which allow users to explore microarray data
+    container-cmd: ["R", "-e", "shiny::runApp('/root/MA_Trix_App')"]
+    container-volumes:  [ "/home/fsoubes/project:/root/MA_Trix_App/data" , "/home/fsoubes/chat:/root/MA_Trix_App/chat" ]
+    container-image: matrixdev
     access-groups: [scientists, mathematicians]
 
 logging:

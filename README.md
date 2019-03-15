@@ -40,14 +40,6 @@ add the following information in the new file
 ExecStart=
 ExecStart=/usr/bin/dockerd -D -H tcp://127.0.0.1:2375
 ```
-
-To validate the new configuration
-
-```
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-```
-
 for more information check the [shinyproxy guide](https://www.shinyproxy.io/getting-started/)
 
 ## Installation
