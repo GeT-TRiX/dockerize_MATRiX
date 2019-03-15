@@ -1,1 +1,8 @@
 MA_Trix_App/
+*.gz
+*.log
+*.jar
+*.yml
+templates/
+*.out
+
