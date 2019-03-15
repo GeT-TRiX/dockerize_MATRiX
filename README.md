@@ -76,7 +76,7 @@ and click on the last link (MATRiX)
 ```
 ## Update application
 
-update MA_Trix_App with branch preprod
+Update MA_Trix_App with branch preprod
 
 ```
 ./preprod.sh
