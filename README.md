@@ -74,6 +74,18 @@ id:tesla
 password:password
 and click on the last link (MATRiX)
 ```
+## Update application
+
+update MA_Trix_App with branch preprod
+
+```
+./preprod.sh
+```
+If you want validate your preprod commits or just update your main branch (pull first in MA_Trix_App repository)
+
+```
+./buildmain.sh
+```
 
 ## Contact
 
