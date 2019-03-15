@@ -5,4 +5,4 @@ MA_Trix_App/
 *.yml
 templates/
 *.out
-
+application.yml
