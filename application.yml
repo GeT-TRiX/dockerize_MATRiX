@@ -1,0 +1,59 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+proxy:
+  title: Open Analytics Shiny Proxy
+  logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
+  landing-page: /
+  heartbeat-rate: 100000
+  heartbeat-timeout: 600000
+  port: 8080
+  authentication: ldap
+  admin-groups: scientists
+  container-wait-time: 200000
+  # Example: 'simple' authentication configuration
+  users:
+  - name: tesla
+    password: password
+    groups: scientists
+  # Example: 'ldap' authentication configuration
+  ldap:
+    url: ldap://ldap.forumsys.com:389/dc=example,dc=com
+    user-dn-pattern: uid={0}
+    group-search-base:
+    group-search-filter: (uniqueMember={0})
+    manager-dn: cn=read-only-admin,dc=example,dc=com
+    manager-password: password
+  authentication: simple
+  support:
+    mail-to-address: franck.soubes@inra.fr
+  container-log-path: ./container-logs
+  #container-env-file:
+  # Docker configuration
+  docker:
+    cert-path: /home/none
+    url: http://localhost:2375
+    port-range-start: 20000
+  specs:
+  - id: 01_hello
+    display-name: Hello Application
+    description: Application which demonstrates the basics of a Shiny app
+    container-cmd: ["R", "-e", "shinyproxy::run_01_hello()"]
+    container-image: openanalytics/shinyproxy-demo
+    access-groups: [scientists, mathematicians]
+  - id: 06_tabsets
+    container-cmd: ["R", "-e", "shinyproxy::run_06_tabsets()"]
+    container-image: openanalytics/shinyproxy-demo
+    access-groups: scientists
+  - id: matrix
+    display-name: MATRiX appl
+    description: Application which allow users to explore microarray data
+    container-cmd: ["R", "-e", "shiny::runApp('/root/MA_Trix_App')"]
+    container-image: openanalytics/shinyproxy-template
+    access-groups: [scientists, mathematicians]
+
+logging:
+  file:
+shinyproxy.log
