@@ -48,8 +48,8 @@ for more information check the [shinyproxy guide](https://www.shinyproxy.io/gett
 First you need to clone the repositories
 ```
 git clone https://github.com/GeT-TRiX/dockerize_MATRiX
+cd dockerize_MATRiX
 git clone https://github.com/GeT-TRiX/MA_Trix_App
-mv MA_Trix_App dockerize_MATRiX/
 ```
 You need to respect the following arborescence
 
@@ -60,7 +60,7 @@ You need to respect the following arborescence
 |   +-- server.R
 |   +-- ui.R
 |   +-- ...
-+-- shinyproxy-2.0.5.jar
++-- shinyproxy-xxx.jar
 +-- Rprofile.site
 +-- Dockerfile
 ```
