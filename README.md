@@ -64,14 +64,15 @@ You need to respect the following arborescence
 +-- Rprofile.site
 +-- Dockerfile
 ```
-
+Next you must edit the file application.yml so that the parameters fit to your system (users credentials, paths, ...).
+Finally you can build docker image and run the app. using these commands
 ```
 cd dockerize_MATRiX
 sudo docker build -t openanalytics/shinyproxy-template .
 java -jar shinyproxy-2.0.5.jar
-connect to http://localhost:8080/
-id:tesla
-password:password
+
+In your browser connect to http://localhost:8080/
+enter login and password (id:tesla, password:password) as configured in the file application.yml
 and click on the last link (MATRiX)
 ```
 ## Update application
